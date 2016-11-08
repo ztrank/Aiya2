@@ -73,6 +73,7 @@ class AIYA2_API AQuest : public AInfo
 		UFUNCTION( BlueprintCallable, Category = "Quests" )
 		float QuestCompletion( ) const;
 
-	
+		UFUNCTION(BlueprintImplementableEvent, Category = "Quests")
+			bool DoOnUpdate(FName Objective);
 	
 };

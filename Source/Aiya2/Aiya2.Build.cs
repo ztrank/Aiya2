@@ -6,9 +6,11 @@ public class Aiya2 : ModuleRules
 {
 	public Aiya2(TargetInfo Target)
 	{
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "StateMachine"});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
+
+        PublicIncludePaths.AddRange(new string[] { "StateMachine/Public", "StateMachine/Classes" });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });

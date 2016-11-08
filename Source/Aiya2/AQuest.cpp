@@ -87,6 +87,7 @@ bool AQuest::TryUpdate(FName Objective, int32 Progress )
 	if ( result )
 	{
 		Update( Objective, Progress );
+		DoOnUpdate(Objective);
 	}
 	return result;
 }
